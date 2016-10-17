@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="helloWorld">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Hive - Hello World mobile app, created to be a baseline app for all developers." />
+    <title>Hive - Hello World</title>
+    
+    <!-- Hive base styling -->
+    <link href="lib/css/hive.css" rel="stylesheet" />
+    
+    <!-- Your Stylesheet
+    if you choose to use grunt in this project then be sure to link this to the proper minified
+    css file for production -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- Bootstrap stylesheets and links
+    Latest compiled and minified Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- End of required Bootstrap stylesheets and links -->
+    
+     
+    <!-- Latest AngularJS, had to move file into js folder due to .gitignore file ignoring node_modules folder  -->
+    <script src="js/angular.min.js"></script>
+    <!-- Latest AngularJS UI-Router, had to move file into js folder due to .gitignore file ignoring node_modules folder -->
+    <script src="js/angular-ui-router.min.js"></script>
+    <!-- UI Bootstrap had to move file into js folder due to .gitignore file ignoring node_modules folder -->
+    <script src="js/ui-bootstrap-tpls.js"></script>
+    
+    
+    <!-- Your Apps JS 
+    if you choose to use grunt in this project then be sure to link this to the proper minified
+    and concatenated js file for production -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <!-- End of your Apps JS -->
+    
+  </head>
+  
+  <!-- This is the main App body, notice the ui-view tag which enables us 
+  to use Angular UI-Router -->
+  <body id="main" ng-controller="appCtrl">
+    <header ui-view="header"></header>
+    <main ui-view="content"></main>
+    <footer ui-view="footer"></footer>
+  </body>
+
+</html>
