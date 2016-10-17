@@ -53,3 +53,8 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+div.mainWrapper {
+    padding-top: 55px;
+    text-align: center;
+}
