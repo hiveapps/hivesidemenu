@@ -22,7 +22,7 @@
         concat: {
             dist: {
                 files: {
-                    'www/dist/js/all.js' : ['www/js/app.js', 'www/js/controllers.js']
+                    'dist/js/main.js' : ['js/app.js', 'js/controllers.js']
                 }
             }
         },

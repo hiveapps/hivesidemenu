@@ -1,4 +1,4 @@
-var helloWorld = angular.module('sideMenu.controllers', []);
+var helloWorld = angular.module('hive.controllers', []);
 
 //controller to track which state is active so we can inject that into the header
 helloWorld.controller("appCtrl", function($rootScope, $scope, $location) {
@@ -22,5 +22,3 @@ helloWorld.controller("appCtrl", function($rootScope, $scope, $location) {
       document.getElementById("hamburger").style.marginLeft= "0";
   })
 });
-
-//add your controllers here
