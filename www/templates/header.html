@@ -1,13 +1,15 @@
 <!-- Beginning of Header/Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="appCtrl">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="headerCtrl">
 	
 	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
-		<a ui-sref="sideMenu.home">Home</a>
-		<a ui-sref="sideMenu.about">About</a>
-		<a ui-sref="sideMenu.services">Services</a>
-		<a ui-sref="sideMenu.clients">Clients</a>
-		<a ui-sref="sideMenu.contact">Contact</a>
+		<ul class="nav navbar-nav">
+			<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+			<li ng-class="{ active: isActive('/')}" style="position: block;"><a ui-sref="sideMenu.home">Home</a></li>
+			<li ng-class="{ active: isActive('/about')}"><a ui-sref="sideMenu.about">About</a></li>
+			<li ng-class="{ active: isActive('/services')}"><a ui-sref="sideMenu.services">Services</a></li>
+			<li ng-class="{ active: isActive('/clients')}"><a ui-sref="sideMenu.clients">Clients</a></li>
+			<li ng-class="{ active: isActive('/contact')}"><a ui-sref="sideMenu.contact">Contact</a></li>
+		</ul>
 	</div>
 
 	<div>

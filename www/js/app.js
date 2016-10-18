@@ -32,7 +32,7 @@ sideMenu.config(function($stateProvider, $urlRouterProvider) {
     })
 
     .state("sideMenu.about", {
-        url: "/",
+        url: "/about",
         views: {
             'content@': {
                 templateUrl: 'templates/about.html'
@@ -41,7 +41,7 @@ sideMenu.config(function($stateProvider, $urlRouterProvider) {
     })
     
     .state("sideMenu.services", {
-        url: "/",
+        url: "/services",
         views: {
             'content@': {
                 templateUrl: 'templates/services.html'
@@ -50,7 +50,7 @@ sideMenu.config(function($stateProvider, $urlRouterProvider) {
     })
     
     .state("sideMenu.clients", {
-        url: "/",
+        url: "/clients",
         views: {
             'content@': {
                 templateUrl: 'templates/clients.html'
@@ -59,7 +59,7 @@ sideMenu.config(function($stateProvider, $urlRouterProvider) {
     })
     
     .state("sideMenu.contact", {
-        url: "/",
+        url: "/contact",
         views: {
             'content@': {
                 templateUrl: 'templates/contact.html'

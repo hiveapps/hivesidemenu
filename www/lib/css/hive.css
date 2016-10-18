@@ -1,6 +1,15 @@
-/* Add your custom css here */
 body {
     font-family: "Lato", sans-serif;
+}
+
+div.mainWrapper {
+    padding-top: 55px;
+    text-align: center;
+}
+
+ul.navbar-nav li {
+    display: inline-block;
+    width: 100%;
 }
 
 .sidenav {
@@ -52,9 +61,4 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-div.mainWrapper {
-    padding-top: 55px;
-    text-align: center;
 }
