@@ -7,11 +7,14 @@ div.mainWrapper {
     text-align: center;
 }
 
+/* stylilng for sidemenu list items */
 ul.navbar-nav li {
     display: inline-block;
     width: 100%;
+    padding: 3%;
 }
 
+/* sidemenu styling starts here */
 .sidenav {
     height: 100%;
     width: 0;
@@ -62,3 +65,4 @@ ul.navbar-nav li {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+/* sidemenu styling ends here */
